@@ -9,8 +9,9 @@ $(function(){
   canvas.height = window.innerHeight*0.95;
 
   window.onresize = function(){
-		can.width = window.innerWidth;
-		can.height = window.innerHeight;
+		canvas.width = window.innerWidth*0.7;
+		canvas.height = window.innerHeight*0.95;
+    context.clearRect(0, 0, canvas.width, canvas.height);
 	}
 });
 
