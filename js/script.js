@@ -7,6 +7,11 @@ $(function(){
   context = canvas.getContext('2d');
   canvas.width = window.innerWidth*0.7;
   canvas.height = window.innerHeight*0.95;
+
+  window.onresize = function(){
+		can.width = window.innerWidth;
+		can.height = window.innerHeight;
+	}
 });
 
 function allowDrop(ev){
