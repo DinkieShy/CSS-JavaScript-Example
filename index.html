@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+	<title>JavaScript Example</title>
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+	<script src="js/script.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <section id="canvasSection" class="noSelect" ondrop="dropPicture(event)" ondragover="allowDrop(event)">
+    <canvas id="canvas"></canvas>
+  </section>
+  <section id="imageSection">
+    <img src="assets/pictures/pRLogo.png" class="pictureInPicker" id="pRLogo" draggable="true" ondragstart="drag(event)">
+    <img src="assets/pictures/uOL.png" class="pictureInPicker" id="uOL" draggable="true" ondragstart="drag(event)">
+    <img src="assets/pictures/logical.png" class="pictureInPicker" id="logical" draggable="true" ondragstart="drag(event)">
+    <img src="assets/pictures/eNHost.png" class="pictureInPicker" id="eNHost" draggable="true" ondragstart="drag(event)">
+  </section>
+</body>
