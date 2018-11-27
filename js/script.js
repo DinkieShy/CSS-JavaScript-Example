@@ -20,6 +20,8 @@ function allowDrop(ev){
 }
 
 function drag(ev){
+  console.log("function drag");
+  console.log(ev);
   ev.dataTransfer.setData("path", ev.path[0].src);
   ev.dataTransfer.setData("height", ev.srcElement.height);
   ev.dataTransfer.setData("width", ev.srcElement.width);
@@ -27,6 +29,8 @@ function drag(ev){
 }
 
 function dropPicture(ev){
+  console.log("function dropPicture");
+  console.log(ev);
   ev.preventDefault();
   var image = new Image();
   var width = ev.dataTransfer.getData("width");
